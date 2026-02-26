@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class employee {
+    private:     //The employee's name and salary are private. You can't fetch them in the main function.
+    string name="John Smith";
+    int salary=0;
+
+    public:
+    void employeename();
+    void setsalary(int s);   //Use set + (the name of the function)
+    int getsalary();        //Use get + (the name of the function)
+};
+
+void employee::employeename() {
+    cout<<name<<endl;
+}
+void employee::setsalary(int s) {
+    salary=s; 
+}
+int employee::getsalary() {
+    return salary;
+}
+
+int main() {
+
+employee obj;
+obj.employeename(); 
+obj.setsalary(3000);    //Set the salary number.
+cout<<"Monthly salary: "<<obj.getsalary()<<"$";    //The code GETS it and compiles it.
+
+    return 0;
+}
