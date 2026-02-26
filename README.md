@@ -1,5 +1,5 @@
 # Setters-Getters
-How to use SETTERS and GETTERS in C++
+How to use SETTERS and GETTERS on C++
 
 ## How to Run
 1. Download or clone this repository
